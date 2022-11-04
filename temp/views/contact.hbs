@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style4.css">
+    <title>Contact US</title>
+</head>
+<body>
+
+    <div class="main">
+          {{>navbar}}
+        <div class="container">
+            <div class="image">
+                <img src="contact.svg" alt="">
+            </div>
+            <div class="form-area">
+                <h2>Contact US</h2>
+                <form action="/contact" method="post">
+                    <input type="text" placeholder="Full Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="number" name="contact" id="" placeholder="Contact Number">
+                    <removethis-textarea cols="30" rows="3" placeholder="Your Message">
+                  </removethis-textarea>
+                   <textarea name="message" placeholder="Your Message" cols="5" rows="3"></textarea>
+                    <button  type="submit">Send Message</button>
+                </form>
+                <div class="social-icons">
+                    <i class="facebook fab fa-facebook-f"></i>
+                    <i class="instagram fab fa-instagram"></i>
+                    <i class="linkedin fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
